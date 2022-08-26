@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700&display=swap');
+body {
+	background: url(../img/fondito.png) top center;
+	color: #D8D8D8;
+	font-family: 'Chivo', sans-serif;
+	line-height: 1.75;
+}
+.logo {
+	width: 18.75rem;
+	height: 4.0625rem;
+	background: url(../svg/Logo.svg) no-repeat center;
+}
+.color-blanco {
+   background-color: rgba(216, 216, 216, 0);
+   color: #D8D8D8 !important;
+}
+.navbar-nav a {
+	color: #D8D8D8 !important;
+    border-bottom: 2px solid transparent;
+}
+.navbar-nav a:hover {
+	border-bottom: 2px solid #4561AA;
+}
+.navbar nav 
+.carousel-caption h5 {
+	text-shadow: 0.15rem 0.15rem 0.25rem #000;
+}
+.carousel-indicators li {
+	width: 1rem !important;
+	height: 1rem !important;
+	border-radius: 50%;
+	background-color: rgba(69, 98, 171, 1.0) !important;
+}
+.color-azul {
+	background-color: rgba(69, 98, 171, 0.2);
+}
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-bg-card-layer: rgba(69, 98, 171, 0.8);
+}
+
+.root {
+    font-size: 19px;
+    padding: 15px;
+}
+
+.our-team__title {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 2rem;
+}
+.our-team {
+   font-size: 18px;
+   text-align: center;
+}
+.cards-container  {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px 10px;
+    max-width: 900px;
+    margin: auto;
+}
+
+@media screen and (min-width: 576px) {
+    .cards-container  {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cards-container  {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .cards-container  {
+        grid-template-columns: repeat(4, auto);
+    }
+
+    .our-team__title {
+        font-size: 2.5rem;
+    }
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card__layer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background-color: var(--color-bg-card-layer);
+
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.card__layer.enter-top {
+    animation-name: enterTop;
+}
+
+.card__layer.enter-bottom {
+    animation-name: enterBottom;
+}
+
+.card__layer.enter-left {
+    animation-name: enterLeft;
+}
+
+.card__layer.enter-right {
+    animation-name: enterRight;
+}
+
+.card__layer.leave-top {
+    animation-name: leaveTop;
+}
+
+.card__layer.leave-bottom {
+    animation-name: leaveBottom;
+}
+
+.card__layer.leave-left {
+    animation-name: leaveLeft;
+}
+
+.card__layer.leave-right {
+    animation-name: leaveRight;
+}
+
+@keyframes enterTop {
+    from {
+        top: -100%;
+        left: 0;
+    }
+    to {
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes leaveTop {
+    from {
+        top: 0;
+        left: 0;
+    }
+    to {
+        top: -100%;
+        left: 0;
+    }
+}
+
+@keyframes enterBottom {
+    from {
+        top: 100%;
+        left: 0;
+    }
+    to {
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes leaveBottom {
+    from {
+        top: 0;
+        left: 0;
+    }
+    to {
+        top: 100%;
+        left: 0;
+    }
+}
+
+@keyframes enterLeft {
+    from {
+        top: 0;
+        left: -100%;
+    }
+    to {
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes leaveLeft {
+    from {
+        top: 0;
+        left: 0;
+    }
+    to {
+        top: 0;
+        left: -100%;
+    }
+}
+
+@keyframes enterRight {
+    from {
+        top: 0;
+        left: 100%;
+    }
+    to {
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes leaveRight {
+    from {
+        top: 0;
+        left: 0;
+    }
+    to {
+        top: 0;
+        left: 100%;
+    }
+}
+
+
+.card__title, .card__description {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.card__title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.card__description {
+    font-size: 1rem;
+}
+
+.card__bg-img {
+    display: block;
+    width: 100%;
+}
+.color-iconos {
+    background: rgba(69, 98, 171, 0.3);
+    font-size: 1.0625em;
+}
+.iconos__title {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 2rem;
+}
+
+.flip-main img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container{
+    max-width: 1170px;
+    margin:auto;
+}
+.flip-main{
+    min-height: 100vh;
+}
+.flip-main .flip-card{
+    flex:0 0 calc(33.33% - 30px);
+    margin:0 15px 30px;
+    perspective: 1000px; /*remove this if you dont want the 3d effect*/
+}
+.flip-main .flip-card-inner{
+    box-shadow: 0 0 10px #a9b3d6;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+.flip-main .flip-card-front img{
+    width: 100%;
+}
+.flip-main .flip-card-front,
+.flip-main .flip-card-back{
+    backface-visibility: hidden;
+}
+.flip-main .flip-card-back{
+    background-color: rgba(69, 98, 171, 0.5);
+    position: absolute;
+    left:0;
+    top:0;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+.flip-main .flip-card-back h3{
+    font-size: 24px;
+    color: #ffffff;
+    margin:0 0 5px;
+}
+.flip-main .flip-card-back p{
+    font-size: 16px;
+    color: #e9e9e9;
+    margin:0;
+}
+.flip-main .flip-card:hover .flip-card-inner{
+   transform: rotateY(180deg);
+}
+
+/*responsive*/
+@media(max-width: 991px){
+  .flip-main .flip-card {
+    flex: 0 0 calc(50% - 30px);
+  }
+}
+@media(max-width: 767px){
+  .flip-main .flip-card {
+    flex: 0 0 calc(100% - 30px);
+  } 
+}
+.flip-card-front h2 {
+  color: #4562AB;
+  font-size: 40px;
+}
+.logo-footer {
+    width: 18.75rem;
+    height: 5rem;
+    background: url(../svg/Logo_f.svg) no-repeat center;
+}
+footer a {
+    color: #D8D8D8;
+}
+footer a:hover {
+    color: #4562AB;
+}
+.navbar-toggler {
+    border-color: white !important;
+}
+.navbar-icon {
+    color: #D8D8D8 ;
+}
