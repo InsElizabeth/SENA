@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.aura_navbar{
+	background-color: rgb(255, 255, 255, 0.7) !important;
+
+}
+
+.aura_navbar div, .aura_navbar ul{
+	background-color: transparent !important;
+
+}
+
+.aura_cont_sec_1{
+	padding: 5%;
+
+}
+
+.aura_cont_sec_1_link{
+	padding: 5%;
+	text-align: right;
+
+}
+.aura_cont_sec_1_link a{
+	width: 200px;
+}
+
+.aura_cont_sec_1_link hr{
+	border-top: 1px solid rgba(1,1,1,0.3);
+}
+
+.aura_cont_footer{
+	background-color: rgba(1,1,1,0.7);
+	padding: 10%;
+	color:#fff;
+	margin-top: 100px;
+}
+
+.aura_cont_footer a{
+	color:#fff;
+	text-decoration: none;
+	display: block;
+}
+.aura_cont_img_footer{
+	padding:5%;
+}
